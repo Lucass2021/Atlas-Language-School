@@ -303,10 +303,10 @@ opacity:1;
 .english-test{
     padding-top:100px;
     width:100%;
-    height:70vh;
+    height:80vh;
     margin:auto;
     text-align:left;
-    background-image: url(./assets/banner-test1.png);
+    background-image: url(./assets/banner-test2.png);
     background-size:cover;
     background-position:center;
 }
@@ -359,4 +359,110 @@ margin-right:30px;
     background: #00008b;
     border:1px solid #00008b;
     /* box-shadow: em todos os buttons */
+}
+
+
+/* ===================== Students Reviews ========================= */
+
+.review{
+    background:white;
+    height:100vh;
+    width:100%;
+    position:relative;
+}
+
+.review h1{
+    text-align:center;
+    padding-top:100px;
+    font-size:36px;
+    color:#00008b;
+}
+
+.slide-row{
+    display:flex;
+    width:3200px;
+    transition:0.5s;
+}
+
+.slide-col{
+    width:800px;
+    height:400px;
+    position:relative;
+}
+
+.user-img{
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+}
+
+.user-img img{
+    width:300px;
+    height:100%;
+    border-radius:10px;
+}
+
+.user-text{
+background:#f44336;
+width:520px;
+height:270px;
+
+position:absolute;
+left:0;
+top:50%;
+transform:translateY(-50%);
+
+border-radius:10px;
+color:white;
+padding:45px;
+
+z-index:2;
+}
+
+.user-text p{
+    font-size:18px;
+    line-height:24px;
+}
+
+.user-text h3{
+    margin:35px 0 5px;
+}
+
+.container{
+    width:800px;
+    height:400px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.indicator{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-50px;
+}
+
+.indicator .btn{
+    display:inline-block;
+    height:15px;
+    width:15px;
+    margin:4px;
+    border-radius:15px;
+    background:#00008b;
+    cursor:pointer;
+    transition:0.5s;
+}
+
+.indicator .active{
+    width:45px;
+
+}
+
+.testimonial{
+    width:100%;
+    height:100%;
+    overflow:hidden;
 }
