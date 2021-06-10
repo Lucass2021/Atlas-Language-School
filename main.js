@@ -30,7 +30,7 @@ function changeBanner() {
 window.addEventListener("load", changeBanner);
 
 
-// =====Testimonial Slider =====
+// =====Testimonial Slider  Buttons =====
 
 const btn = document.getElementsByClassName("btn");
 const slide = document.getElementById("slide");
@@ -68,3 +68,13 @@ btn[3].onclick = function () {
     this.classList.add("active");
 }
 
+// =====Testimonial Slider Arrow =====
+const arrowBtn = document.getElementsByClassName("arrow-btn");
+const slide = document.getElementById("slide");
+
+$(function () {
+    $('.slide-row').slick();
+    prevArrow: '<span class="arrow-btn"><i class="fas fa-chevron-left"></i></span>';
+})
+
+5.17;

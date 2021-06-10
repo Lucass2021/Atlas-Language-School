@@ -233,6 +233,7 @@ justify-content:space-around;
 
 .layer:hover{
     background: rgba(226,0,0,0.7);
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.4);
 }
 
 .layer h3{
@@ -296,12 +297,13 @@ opacity:1;
 
 .layer:hover .hero-btn:hover{
     background:#00008b;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.4);
 }
 
 /* ===================== English Test ========================= */
 
 .english-test{
-    padding-top:100px;
+    padding-top:70px;
     width:100%;
     height:80vh;
     margin:auto;
@@ -358,7 +360,7 @@ margin-right:30px;
 .english-test a:hover{
     background: #00008b;
     border:1px solid #00008b;
-    /* box-shadow: em todos os buttons */
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.4);
 }
 
 
@@ -366,16 +368,20 @@ margin-right:30px;
 
 .review{
     background:white;
-    height:100vh;
+    height:85vh;
     width:100%;
     position:relative;
+    background-image: url(./assets/border-effect.png);
+    background-position:center;
+    background-size:cover;
 }
 
 .review h1{
     text-align:center;
-    padding-top:100px;
+    padding-top:70px;
     font-size:36px;
     color:#00008b;
+    
 }
 
 .slide-row{
@@ -443,6 +449,7 @@ z-index:2;
     left:50%;
     transform:translateX(-50%);
     bottom:-50px;
+    z-index:10;
 }
 
 .indicator .btn{
@@ -459,6 +466,21 @@ z-index:2;
 .indicator .active{
     width:45px;
 
+}
+
+.arrow-indicator{
+    font-size:60px;
+    color: #00008b;
+    width:1000px;
+
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);
+    top:200px;
+    display:flex;
+    justify-content:space-between;
+    z-index:10;
+    cursor:pointer;
 }
 
 .testimonial{
