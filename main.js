@@ -69,12 +69,3 @@ btn[3].onclick = function () {
 }
 
 // =====Testimonial Slider Arrow =====
-const arrowBtn = document.getElementsByClassName("arrow-btn");
-const slide = document.getElementById("slide");
-
-$(function () {
-    $('.slide-row').slick();
-    prevArrow: '<span class="arrow-btn"><i class="fas fa-chevron-left"></i></span>';
-})
-
-5.17;
