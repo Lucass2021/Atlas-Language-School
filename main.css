@@ -6,7 +6,7 @@
 }
 
 body{
-    background: #eee;
+    background: white;
 }
 
 .header-top h1{
@@ -311,6 +311,7 @@ opacity:1;
     background-image: url(./assets/banner-test2.png);
     background-size:cover;
     background-position:center;
+    
 }
 
 .english-test h1{
@@ -364,9 +365,19 @@ margin-right:30px;
 }
 
 
-/* ===================== Students Reviews ========================= */
+/* ===================== Students Testimonial ========================= */
 
-.review{
+.container{
+    max-width:1100px;
+    margin:0 auto;
+    padding:0 3rem;
+    position: absolute;
+    bottom:-10%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.testimonial{
     background:white;
     height:85vh;
     width:100%;
@@ -376,118 +387,78 @@ margin-right:30px;
     background-size:cover;
 }
 
-.review h1{
+.testimonial h2{
     text-align:center;
-    padding-top:70px;
     font-size:36px;
     color:#00008b;
-    
-}
-
-.slide-row{
-    display:flex;
-    width:3200px;
-    transition:0.5s;
-}
-
-.slide-col{
-    width:800px;
-    height:400px;
-    position:relative;
-}
-
-.user-img{
     position:absolute;
-    top:0;
-    right:0;
-    height:100%;
+    top:20%;
+    left:50%;
+    transform: translate(-50%);
 }
 
-.user-img img{
-    width:300px;
+.testimonial h2::after{
+    content:"";
+    display:block;
+    margin:0 auto;
+    margin-top:0px;
+    width:30%;
+    background:#f44336;
+    height:3px;
+}
+
+.testimonials-box{
+    position:relative;
+    left:40%;
+    transform: translate(-50%);
+    z-index:1;
+    max-width:800px;
+    min-height:380px;
+    margin:20rem auto 0 auto;
+}
+
+.testimonials-box::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:#f44336;
+    z-index:-1;
+    border-radius:10px;
+}
+
+.testimonials-box h3{
+    color:white;
+    font-size:24px;
+    text-align:center;
+    padding-top:6rem;
+    margin-bottom:3rem;
+    letter-spacing:3px;
+}
+
+.testimonials-box p{
+    color:white;
+    font-size:18px;
+    line-height:1.5rem; 
+    width:80%;
+    text-align:center;
+    margin:auto;
+    padding-bottom:3.5rem;
+}
+
+.testimonial-photo{
+    position:absolute;
+    top:-70px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.testimonial-photo img{
+    width:100px;
     height:100%;
     border-radius:10px;
 }
 
-.user-text{
-background:#f44336;
-width:520px;
-height:270px;
-
-position:absolute;
-left:0;
-top:50%;
-transform:translateY(-50%);
-
-border-radius:10px;
-color:white;
-padding:45px;
-
-z-index:2;
-}
-
-.user-text p{
-    font-size:18px;
-    line-height:24px;
-}
-
-.user-text h3{
-    margin:35px 0 5px;
-}
-
-.container{
-    width:800px;
-    height:400px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-}
-
-.indicator{
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-    bottom:-50px;
-    z-index:10;
-}
-
-.indicator .btn{
-    display:inline-block;
-    height:15px;
-    width:15px;
-    margin:4px;
-    border-radius:15px;
-    background:#00008b;
-    cursor:pointer;
-    transition:0.5s;
-}
-
-.indicator .active{
-    width:45px;
-
-}
-
-.arrow-indicator{
-    font-size:60px;
-    color: #00008b;
-    width:1000px;
-
-    position:relative;
-    left:50%;
-    transform:translateX(-50%);
-    top:200px;
-    display:flex;
-    justify-content:space-between;
-    z-index:10;
-    cursor:pointer;
-}
-
-.testimonial{
-    width:100%;
-    height:100%;
-    overflow:hidden;
-}
 
 /* ===================== NewsLetter ========================= */
 
@@ -500,6 +471,7 @@ z-index:2;
     background-image: url(./assets/newsletter.png);
     background-position:center;
     background-size:cover;
+    margin-top:150px;
 }
 
 .newsletter .text{
@@ -648,5 +620,7 @@ p{
 }
 
 
-/* ===================== Students Testimonial ========================= */
+
+
+
 
