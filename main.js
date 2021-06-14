@@ -31,7 +31,7 @@ window.addEventListener("load", changeBanner);
 
 
 
-// =====Testimonial Own =====
+// =====Testimonial Owl Slider =====
 
 $('.owl-carousel').owlCarousel({
     loop: true,
@@ -39,10 +39,21 @@ $('.owl-carousel').owlCarousel({
     autoplayTimeout: 4000,
     autoplayHoverPause: false,
     nav: true,
-    margin: 350,
+    margin: 500,
     responsive: {
         0: {
             items: 1
         }
     }
 })
+
+// =====Menu Responsive Toggle=====
+const nav = document.getElementById("navLinks");
+
+function showMenu() {
+    nav.style.right = "0";
+}
+
+function hideMenu() {
+    nav.style.right = "-200px";
+}

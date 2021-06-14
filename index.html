@@ -28,7 +28,8 @@
         <nav>
             <a href="./index.html"> <img src="./assets/atlas-logo.png"></a>
 
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">Cursos</a></li>
                     <li><a href="">Escolas</a></li>
@@ -38,7 +39,7 @@
                     <li><a href="">Fale Conosco</a></li>
                 </ul>
             </div>
-
+            <i class="fas fa-bars" onclick="showMenu()"></i>
         </nav>
 
     </section>
@@ -50,9 +51,9 @@
     <section class="main-banner">
 
         <div class="slider">
-            <img class="selected" src="./assets/background1.jpg">
+            <img id="image1" class="selected" src="./assets/background1.jpg">
             <img id="image2" src="./assets/background2.jpg">
-            <img src="./assets/background3.jpg">
+            <img id="image3" src="./assets/background3.jpg">
         </div>
 
     </section>

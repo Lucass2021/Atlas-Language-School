@@ -7,6 +7,7 @@
 
 body{
     background: white;
+    overflow-x: hidden;
 }
 
 .header-top h1{
@@ -64,6 +65,60 @@ nav img{
     transition: 0.5s;
 }
 
+nav .fas{
+    display:none;
+}
+
+@media (max-width: 700px){
+
+    .nav-links li{
+        display:block;
+    }
+
+    .nav-links {
+     position:fixed;
+     background: #f44336;
+     height: 100vh;
+     width:200px;
+     top:0;
+     right:-200px;
+     text-align:left;
+     z-index:2;
+     
+    }
+
+    .nav-links a{
+        color:white;
+    }
+
+    nav .fas{
+        display:block;
+        margin:10px;
+        font-size:22px;
+        color:white;
+        cursor:pointer;
+    }
+
+    nav img{
+        width:130px;
+        padding:20px 0;
+    }
+
+    .nav-links ul{
+        padding:30px;
+    }
+
+    .fas .fa-bars{
+        color:black;
+    }
+
+    .header-top h1{
+        display:none;
+    }
+
+
+}
+
 
 /* =======================Slider=================================== */
 
@@ -95,6 +150,42 @@ nav img{
     opacity:1;
 }
 
+@media (max-width: 700px){
+.slider img{
+    height:500px;
+    width:100%;
+}
+
+.slider #image1{
+    display:block;
+    background: url(./assets/background1-responsive.jpg) no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:500px;
+    width:100%;
+    padding-left: 320px; /* Equal to width of new image */
+}
+
+.slider #image2{
+    display:block;
+    background: url(./assets/background2-responsive.jpg) no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:500px;
+    width:100%;
+    padding-left: 320px; /* Equal to width of new image */
+}
+.slider #image3{
+    display:block;
+    background: url(./assets/background3-responsive.jpg) no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:500px;
+    width:100%;
+    padding-left: 320px; /* Equal to width of new image */
+}
+
+}
 
 /* ======================Studies========================= */
 
@@ -175,6 +266,25 @@ justify-content:space-around;
     background: #f44336;
     color:white;
     transition:1s;
+}
+
+@media (max-width: 700px){
+    .studies{
+        padding-top:350px;
+    }
+
+    .studies h1{
+        font-size:20px;
+    }
+
+    .studies p{
+        font-size:14px;
+    }
+
+    .studies-col{
+        flex-direction:column;
+        width:100%;
+    }
 }
 
 
@@ -355,6 +465,7 @@ margin-right:30px;
     cursor:pointer;
     position:relative;
     margin-left:8%;
+    z-index:10;
     
 }
 
@@ -362,6 +473,7 @@ margin-right:30px;
     background: #00008b;
     border:1px solid #00008b;
     box-shadow: 0 0 20px 5px rgba(0,0,0,0.4);
+    z-index:10;
 }
 
 
