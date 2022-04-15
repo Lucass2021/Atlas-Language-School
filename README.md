@@ -25,6 +25,20 @@
 <h1 align="center">
     <img src="./git/print.jpg"/>
 </h1>
+<h1 align="center">
+    <img src="./git/projeto2.jpg"/>
+</h1>
+<h1 align="center">
+    <img src="./git/projeto3.jpg"/>
+</h1>
+<h1 align="center">
+    <img src="./git/projeto4.jpg"/>
+</h1>
+<h1 align="center">
+    <img src="./git/projeto5.jpg"/>
+</h1>
+
+
 
 
 
